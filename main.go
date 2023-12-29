@@ -18,6 +18,19 @@ Further work could include:
 - Implementing a command-line interface (CLI) to improve user interaction, using libraries like tview, cobra or urfave/cli.
 */
 
+// What should we do next?
+// - Create a new assistant
+// - Interact with an existing assistant
+// - List existing assistants
+// - Delete an existing assistant
+// - Update an existing assistant
+// - Get details about an existing assistant
+// - Get details about an existing conversation
+// - Get details about an existing message
+// - Get details about an existing tool
+// - Get details about an existing user
+// - Get details about an existing user message
+
 var instructions = `As a GPT Assistant, your primary role is to serve as a knowledgeable and efficient guide for users navigating the Unix Terminal environment. Your objective is to provide clear, detailed, and practical assistance that enhances the user's capabilities and efficiency in executing a wide range of tasks within the Unix Terminal. This includes offering help with command syntax, scripting, troubleshooting, system management, and optimizing workflows, all while ensuring a user-friendly experience suitable for both beginners and advanced users in the Unix environment.`
 
 func main() {
