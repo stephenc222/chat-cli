@@ -14,11 +14,26 @@ Chat-CLI is an innovative command-line interface (CLI) tool, powered by AI, spec
 
 ## Installation
 
+## Install from Remote
+
+To install remotely, you can run the following script:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/stephenc222/chat-cli/main/install.sh)"
+
+```
+
+which will download the corresponding binary executable for your system.
+
+To test if the installation was successfull, run `chat` , and you should be prompted for your OpenAI API key.
+
+### Local Installation
+
 _Note: Chat-CLI requires Go to be installed on your system._
 
-1. Clone the repository from [GitHub link].
-2. Navigate to the cloned directory.
-3. Run `go build` to compile the source code.
+Run `sh build.sh` to compile the source code. Then run `sh local_install.sh` to install locally yourself.
+
+To run locally for development, just run `sh dev.sh`
 
 ## Configuration
 
@@ -26,9 +41,9 @@ Before using Chat-CLI, you must configure it with your OpenAI API key. You can d
 
 ## Usage
 
-To start Chat-CLI, run the compiled executable. The tool offers the following options:
+To start Chat-CLI, run the compiled executable. The tool will do the following:
 
-- Create a new assistant
+- Create a new assistant or
 - Interact with an existing assistant
 
 ## Development TODOs
@@ -41,3 +56,4 @@ To start Chat-CLI, run the compiled executable. The tool offers the following op
 - List, update, or delete existing assistants
 - Retrieve details about assistants, conversations, messages, tools, or users
 - Implement an improved CLI using libraries like `tview`, `cobra`, or `urfave/cli`.
+- Tools...
